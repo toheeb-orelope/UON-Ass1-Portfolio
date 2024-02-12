@@ -1,0 +1,200 @@
+/*
+--text: hsl(220, 21%, 95%);
+--background: hsl(214, 20%, 7%);
+--primary: hsl(221, 21%, 71%);
+--secondary: hsl(303, 22%, 32%);
+--accent: hsl(333, 22%, 53%);
+*/
+/* Universal selector */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(214, 20%, 7%);
+}
+
+/*Navigation bar modification*/
+nav ul {
+    list-style: none;
+    /* background-color: hsl(333, 22%, 53%); */
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 10px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: hsl(221, 12%, 71%);
+}
+
+nav li {
+    float: left;
+}
+/*Header Modification*/
+header {
+    padding: 20px;
+    margin: 0px;
+}
+
+
+.headP{
+    color: hsl(220, 21%, 95%);
+    text-transform: capitalize;
+    font-size: 1.5em;
+    padding-left: 20px;
+}
+header img{
+    float: left;
+    width: 150px;
+    height: 150px;
+    padding-right: 20px;
+}
+/* Main and Form Modification */
+.required{
+    color: red;
+}
+label{
+    color: hsl(220, 21%, 95%);
+}
+.placeholderForm{
+    width: 300px;
+    height: 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 2px solid;
+    border-radius: 5px;
+}
+#country{
+    height: 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 2px solid;
+    border-radius: 5px; 
+}
+#comment{
+    height: 100px;
+    width: 300px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 2px solid;
+    border-radius: 5px; 
+}
+.submit{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+}
+.reset{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+/*Eddited footer using display, justfy-content, pseudo-class selector, and more
+
+*/
+footer {
+    padding: 25px;
+    display: block;
+    clear: both;
+    height: 30px;
+}
+
+.footerIcons {
+    display: flex;
+    justify-content: center;
+    background-color: hsl(221, 21%, 71%);
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+.footerIcons a {
+    margin: 0 10px;
+}
+
+.fa-brands.fa-facebook.fa-2x {
+    color: hsl(213.85, 89.34%, 52.16%);
+}
+
+/*Example of pseudo-class selector*/
+.fa-brands.fa-facebook.fa-2x:hover {
+    color: hsl(213, 91%, 13%);
+}
+
+.fa-brands.fa-discord.fa-2x {
+    color: #5865F2;
+}
+
+.fa-brands.fa-discord.fa-2x:hover {
+    color: #0b1042;
+}
+
+.fa-brands.fa-linkedin.fa-2x {
+    color: hsl(210.00, 90.20%, 40.00%);
+}
+
+.fa-brands.fa-linkedin.fa-2x:hover {
+    color: hsl(210, 93%, 21%);
+}
+
+.fa-brands.fa-github.fa-2x {
+    color: hsl(210, 12%, 19%);
+}
+
+.fa-brands.fa-github.fa-2x:hover {
+    color: hsl(210, 16%, 10%);
+}
+
+.fa-brands.fa-youtube.fa-2x {
+    color: hsl(0, 100%, 50%);
+}
+
+.fa-brands.fa-youtube.fa-2x:hover {
+    color: hsl(0, 93%, 40%);
+}
+
+.fa-regular.fa-envelope.fa-2x {
+    color: hsl(5, 64%, 53%);
+}
+
+.fa-regular.fa-envelope.fa-2x:hover {
+    color: hsl(5, 81%, 17%);
+}
+
+footer p {
+    color: hsl(220, 21%, 95%);
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+    text-decoration: none;
+    padding: 10px;
+}
+.copyright{
+    background-color: hsl(221, 21%, 71%);
+    width: 100%;
+    height: 60px;
+}
