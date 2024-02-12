@@ -198,3 +198,16 @@ footer a {
     width: 100%;
     height: 60px;
 }
+
+/*Header and nav testing modification*/
+.headernav img{
+    width: 50px;
+    height: 50px;
+    margin-right: 300px;
+    margin-left: 50px;
+}
+nav ul li a.active {
+    color: hsl(228, 72%, 51%); /* Text color for active link */
+    /* background-color: hsl(221, 12%, 71%); Background color for active link */
+    /* Add any other styles you want for the active link */
+}
