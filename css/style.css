@@ -23,10 +23,12 @@ nav ul {
     /* background-color: hsl(333, 22%, 53%); */
     margin: 0px;
     padding: 0px;
+    margin-left: 50%;
     display: flex;
     justify-content: space-evenly;
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
+
 nav a {
     color: white;
     text-decoration: none;
@@ -42,6 +44,7 @@ nav a:hover {
 nav li {
     float: left;
 }
+
 /*Header Modification*/
 header {
     padding: 20px;
@@ -49,26 +52,76 @@ header {
 }
 
 
-.headP{
+.headP {
     color: hsl(220, 21%, 95%);
     text-transform: capitalize;
     font-size: 1.5em;
     padding-left: 20px;
 }
-header img{
+
+header img {
     float: left;
     width: 150px;
     height: 150px;
     padding-right: 20px;
 }
+
+/* Home Main modification 
+--primary: hsl(221, 21%, 71%);
+--secondary: hsl(303, 22%, 32%);
+--accent: hsl(333, 22%, 53%)
+*/
+.homeMain div {
+    background-color: hsl(220, 21%, 95%);
+    padding: 20px;
+    box-shadow: inset 0px 0px 20px hsl(240, 1%, 50%);
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+    width: 50%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.homeMain p {
+    margin-bottom: 20px;
+    color: hsl(240, 5%, 4%);
+    text-align: justify;
+    line-height: 1.5;
+    line-break: auto;
+}
+
+.homeMain ul {
+    list-style: none;
+    /* display: flex;
+    justify-content: space-between; */
+}
+.homeMain ul li a{
+    text-decoration: none;
+}
+.homeMain ul li:hover{
+    background-color: hsl(333, 22%, 53%);
+}
+.homeMain ul li {
+    border: 2px solid;
+    width: 100px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-right: 30px;
+    color: hsl(303, 71%, 44%);
+}
+
 /* Main and Form Modification */
-.required{
+.required {
     color: red;
 }
-label{
+
+label {
     color: hsl(220, 21%, 95%);
 }
-.placeholderForm{
+
+.placeholderForm {
     width: 300px;
     height: 40px;
     margin-top: 15px;
@@ -76,29 +129,33 @@ label{
     border: 2px solid;
     border-radius: 5px;
 }
-#country{
+
+#country {
     height: 40px;
     margin-top: 15px;
     margin-bottom: 15px;
     border: 2px solid;
-    border-radius: 5px; 
+    border-radius: 5px;
 }
-#comment{
+
+#comment {
     height: 100px;
     width: 300px;
     margin-top: 15px;
     margin-bottom: 15px;
     border: 2px solid;
-    border-radius: 5px; 
+    border-radius: 5px;
 }
-.submit{
+
+.submit {
     margin-top: 15px;
     margin-bottom: 15px;
     height: 30px;
     width: 100px;
     border-radius: 10px;
 }
-.reset{
+
+.reset {
     margin-top: 15px;
     margin-bottom: 15px;
     height: 30px;
@@ -106,6 +163,7 @@ label{
     border-radius: 10px;
     margin-left: 30px;
 }
+
 /*Eddited footer using display, justfy-content, pseudo-class selector, and more
 
 */
@@ -193,21 +251,24 @@ footer a {
     text-decoration: none;
     padding: 10px;
 }
-.copyright{
+
+.copyright {
     background-color: hsl(221, 21%, 71%);
     width: 100%;
     height: 60px;
 }
 
 /*Header and nav testing modification*/
-.headernav img{
+.headernav img {
     width: 50px;
     height: 50px;
     margin-right: 300px;
     margin-left: 50px;
 }
+
 nav ul li a.active {
-    color: hsl(228, 72%, 51%); /* Text color for active link */
+    color: hsl(228, 72%, 51%);
+    /* Text color for active link */
     /* background-color: hsl(221, 12%, 71%); Background color for active link */
     /* Add any other styles you want for the active link */
 }
