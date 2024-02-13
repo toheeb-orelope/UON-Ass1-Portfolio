@@ -13,11 +13,17 @@
     box-sizing: border-box;
 }
 
+/* Body Modification */
 body {
+    grid-template-columns: auto;
     background-color: hsl(214, 20%, 7%);
 }
 
+
 /*Navigation bar modification*/
+nav{
+    /* place-content: ; */
+}
 nav ul {
     list-style: none;
     /* background-color: hsl(333, 22%, 53%); */
@@ -65,7 +71,10 @@ header img {
     height: 150px;
     padding-right: 20px;
 }
-
+/* Main Modification */
+main {
+    grid-area: auto;
+}
 /* Home Main modification 
 --primary: hsl(221, 21%, 71%);
 --secondary: hsl(303, 22%, 32%);
@@ -109,10 +118,11 @@ header img {
     border-radius: 10px;
     display: inline-block;
     margin-right: 30px;
+    margin-top: 10px;
     color: hsl(303, 71%, 44%);
 }
 
-/* Main and Form Modification */
+/* Form Main Modification */
 .required {
     color: red;
 }
@@ -258,7 +268,7 @@ footer a {
     height: 60px;
 }
 
-/*Header and nav testing modification*/
+/*Header and nav testing modification for Branch repository*/
 .headernav img {
     width: 50px;
     height: 50px;
