@@ -71,6 +71,18 @@ header img {
     height: 150px;
     padding-right: 20px;
 }
+/* Contact page header */
+.contactHeader{
+    color: hsl(333, 22%, 53%);
+}
+.contactHeader div p{
+    font-size: 2em;
+    /* margin-left: 40px; */
+}
+.contactHeader div i{
+    float: left;
+    padding-right: 30px;
+}
 /* Main Modification */
 main {
     grid-area: auto;
