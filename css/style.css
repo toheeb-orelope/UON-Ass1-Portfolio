@@ -5,14 +5,19 @@
 --secondary: hsl(303, 22%, 32%);
 --accent: hsl(333, 22%, 53%);
 */
-/* Universal selector */
+/* Root color build up */
 :root{
 --text: hsl(220, 21%, 95%);
 --background: hsl(214, 20%, 7%);
 --primary: hsl(221, 21%, 71%);
 --secondary: hsl(303, 22%, 32%);
 --accent: hsl(333, 22%, 53%);
+--text2: hsla(0, 0%, 4%, 0.943);
+--shadowColoro: rgba(0, 0, 0, 0.5);
+--homeMainButton: hsl(303, 71%, 44%);
 }
+
+/* Universal selector */
 * {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -22,14 +27,23 @@
 
 /* Body Modification */
 body {
-    grid-template-columns: auto;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "nav nav nav"
+    "header header header"
+    "main main main"
+    "footer footer footer"
+    ;
     background-color: var(--background);
+    margin: 40px;
 }
 
 
 /*Navigation bar modification*/
 nav{
-    /* place-content: ; */
+    grid-area: nav;
 }
 nav ul {
     list-style: none;
@@ -43,7 +57,7 @@ nav ul {
 }
 
 nav a {
-    color: white;
+    color: var(--text);
     text-decoration: none;
     padding: 15px;
     display: block;
@@ -51,7 +65,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: hsl(221, 12%, 71%);
+    background-color: var(--primary);
 }
 
 nav li {
@@ -62,14 +76,16 @@ nav li {
 header {
     padding: 20px;
     margin: 0px;
+    grid-area: header;
 }
 
 
 .headP {
-    color: hsl(220, 21%, 95%);
+    color: var(--text);
     text-transform: capitalize;
-    font-size: 1.5em;
-    padding-left: 20px;
+    font-size: 1em;
+    /* padding-left: px; */
+    padding-top: 20px;
 }
 
 header img {
@@ -78,14 +94,14 @@ header img {
     height: 150px;
     /* padding-right: 20px; */
     border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px var(--shadowColoro);
     object-fit: cover;
     /* background-color: #f0f0f0; */
-    background-image: url("//images/Work_Station_Setup.png");
+    margin-right: 20px;
 }
 /* Contact page header */
 .contactHeader{
-    color: hsl(333, 22%, 53%);
+    color: var(--accent);
 }
 .contactHeader div p{
     font-size: 2em;
@@ -97,7 +113,7 @@ header img {
 }
 /* Main Modification */
 main {
-    grid-area: auto;
+    grid-area: main;
 }
 /* Home Main modification 
 --primary: hsl(221, 21%, 71%);
@@ -105,7 +121,7 @@ main {
 --accent: hsl(333, 22%, 53%)
 */
 .homeMain div {
-    background-color: hsl(220, 21%, 95%);
+    background-color: var(--text);
     padding: 20px;
     box-shadow: inset 0px 0px 20px hsl(240, 1%, 50%);
     word-wrap: break-word; 
@@ -117,7 +133,7 @@ main {
 
 .homeMain p {
     margin-bottom: 20px;
-    color: hsl(240, 5%, 4%);
+    color: var(--text2);
     text-align: justify;
     line-height: 1.5;
     line-break: auto;
@@ -143,7 +159,7 @@ main {
     display: inline-block;
     margin-right: 30px;
     margin-top: 10px;
-    color: hsl(303, 71%, 44%);
+    color: var(--primary);
 }
 
 /* Form Main Modification */
@@ -152,7 +168,7 @@ main {
 }
 
 label {
-    color: hsl(220, 21%, 95%);
+    color: var(--text);
 }
 
 .placeholderForm {
@@ -199,9 +215,9 @@ label {
 }
 .subprojectMain {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
-    grid-auto-rows: auto; /* Automatic row height */
-    gap: 20px; /* Gap between grid items */
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto; 
+    gap: 20px;
     /* background-color: hsl(220, 21%, 95%);
     padding: 20px;
     box-shadow: inset 0px 0px 20px hsl(240, 1%, 50%); */
@@ -214,8 +230,8 @@ label {
 
 .subprojectMain div {
     padding: 10px; 
-    border: 1px solid black; 
-    background-color: hsl(220, 21%, 95%);
+    border: 1px solid var(--text2); 
+    background-color: var(--text);
     padding: 20px;
     box-shadow: inset 0px 0px 20px hsl(240, 1%, 50%);
     width: 50%;
@@ -244,9 +260,38 @@ label {
     margin-bottom: 20px; 
 } */
 
+
+/* video Demo Page Main Modification */
+.videoDemoMain{
+    margin: 0px;
+    padding: 0px;
+}
+.myVideoDemo{
+    /* position: relative; */
+    display: block;
+    width: 400px;
+    height: 400px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.waterside{
+    display: block;
+    width: 400px;
+    height: 400px;
+    /* margin-top: 20px; */
+    margin-bottom: 20px;
+}
+/* .videoDemoMain{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto; 
+    gap: 20px;
+} */
+
 /*Eddited footer using display, justfy-content, pseudo-class selector, and more*/
 footer{
-    padding: 25px;
+    grid-area: footer;
+    /* padding: 25px; */
     display: block;
     clear: both;
     height: 30px;
@@ -255,7 +300,7 @@ footer{
 .footerIcons {
     display: flex;
     justify-content: center;
-    background-color: hsl(221, 21%, 71%);
+    background-color: var(--primary);
     margin-left: 250px;
     margin-right: 250px;
 }
@@ -314,7 +359,7 @@ footer{
 }
 
 footer p {
-    color: hsl(220, 21%, 95%);
+    color: var(--text);
     text-align: center;
 }
 
@@ -331,7 +376,7 @@ footer a {
 }
 
 .copyright {
-    background-color: hsl(221, 21%, 71%);
+    background-color: var(--primary);
     width: 100%;
     height: 60px;
 }
