@@ -223,7 +223,7 @@ label {
     box-shadow: inset 0px 0px 20px hsl(240, 1%, 50%); */
     /* word-wrap: break-word;
     overflow-wrap: break-word; */
-    width: 50%;
+    /* width: 50%; */
     margin-top: 50px;
     margin-bottom: 50px;
 }
@@ -234,7 +234,8 @@ label {
     background-color: var(--text);
     padding: 20px;
     box-shadow: inset 0px 0px 20px hsl(240, 1%, 50%);
-    width: 50%;
+    /* width: 50%; */
+    text-align: justify;
 }
 .projectMain{
     width: auto;
@@ -242,6 +243,23 @@ label {
 .subprojectMain{
     width: auto;
 }
+.subprojectMain div::first-letter{
+    font-size: 2em;
+    font-style: italic;
+}
+.subprojectMain div p::first-letter{
+    font-size: 1.5em;
+font-weight: bold;
+}
+.subprojectMain div h2{
+   color: var(--secondary);
+}
+.subprojectMain div h3{
+    font-weight: bold;
+ }
+ .subprojectMain div h2 a{
+    text-decoration: none;
+ }
 
 /* Project page main */
 /* .subprojectMain div{
