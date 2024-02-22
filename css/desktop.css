@@ -1,0 +1,15 @@
+:root{
+    --text: hsl(220, 21%, 95%);
+    --background: hsl(214, 20%, 7%);
+    --primary: hsl(221, 21%, 71%);
+    --secondary: hsl(303, 22%, 32%);
+    --accent: hsl(333, 22%, 53%);
+    --text2: hsla(0, 0%, 4%, 0.943);
+    --shadowColoro: rgba(0, 0, 0, 0.5);
+    --homeMainButton: hsl(303, 71%, 44%);
+    }
+    @media only screen and (min-width: 800px){
+body{
+    background-color: var(--secondary);
+}
+}
