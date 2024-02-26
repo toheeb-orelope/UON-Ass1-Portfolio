@@ -1,4 +1,4 @@
-:root{
+:root {
     --text: hsl(220, 21%, 95%);
     --background: hsl(214, 20%, 7%);
     --primary: hsl(221, 21%, 71%);
@@ -7,9 +7,20 @@
     --text2: hsla(0, 0%, 4%, 0.943);
     --shadowColoro: rgba(0, 0, 0, 0.5);
     --homeMainButton: hsl(303, 71%, 44%);
-    }
-    @media only screen and (min-width: 800px){
-body{
-    background-color: var(--secondary);
 }
+
+/* Body Modification */
+body {
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "nav nav nav"
+        "header header header"
+        "main main main"
+        "aside aside aside"
+        "footer footer footer"
+    ;
+    background-color: var(--accent)
 }
+
