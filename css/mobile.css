@@ -25,10 +25,7 @@ body {
     ;
 }
 
-/* footer {
-    height: 7em;
-} */
-
+/* Aside related modification */
 /* Aside Icons font size */
 .changeSize {
     font-size: 0.8em;
@@ -45,13 +42,13 @@ body {
 
 .asideIcons a {
     margin: 0 0.58em;
-    /* width: 80%; */
     justify-content: center;
 }
 
 aside{
     width: 100%;
 }
+
 /*Eddited footer using display, justfy-content, pseudo-class selector, and more*/
 footer {
     height: 4em;
@@ -73,43 +70,75 @@ footer ul {
 
 footer a {
     text-decoration: none;
-    /* padding-top: 0.8em; */
-    /* padding: 0.2em;
-    margin: 0 1em; */
 }
 
 .copyright {
     width: 100%;
 }
 
-
+/* video Demo Modification */
 .myVideoDemo {
-    /* display: block; */
     width: 5em;
     height: 5em;
     margin-top: 1.5em;
     margin-bottom: 1.5em;
 }
 
+/* Map Modification */
 .waterside {
-    /* display: block; */
     width: 5em;
     height: 5em;
-    /* margin-top: 20px; */
     margin-bottom: 1.5em;
 }
 
+/* header Related Modification */
 header {
-    padding: 1em;
+    padding: 1.5em;
 }
-/* Contact header h1 */
 .contactHeader div p {
     font-size: 1em;
 }
 .contactHeader div{
-    margin-top: 2em;
+    margin-top: 1em;
+    margin-left: 0;
 }
 
+/* Contact page header icon */
+.fa-solid.fa-address-card.fa-3x{
+    font-size: 1.5em;
+    margin-left: 30%;
+}
+
+/* Main related modification */
+/* .contactMain{
+    width: 100%;
+    margin-left: 0;
+    padding-top: 2em;
+
+} */
+
+/* Form related modification */
+
+
+form{
+    display: grid;
+    grid-template-columns: 100%;
+    width: 100%;
+    background-color: #020524;
+    border-radius: 1em;
+    height: 25em;
+    padding-left: 1em;
+    padding-top: 1em;
+    padding-right: 1em;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.contactHeader div i {
+    float: none;
+    /* padding-right: 0.5em; */
+}
+/* Show nav, Hambuger Modification */
 .showNav {
     height: 0.2em;
     width: 1.25em;
@@ -119,34 +148,6 @@ header {
     box-sizing: content-box;
 }
 
-nav ul {
-    flex-direction: column;
-}
-
-nav li 
-{
-    padding-bottom: 1em;
-}
-
-/* .showNav::before {
-    content: '';
-    position: absolute;
-    width: 1.25em;
-    margin-top: 0.3em;
-    border-top: 0.2em solid #fff;
-} */
-
-nav {
-    display: block;
-    transform: translate(150%, 0);
-    transition: 0.5s;
-    background-color: var(--primary);
-    position: fixed;
-    top: 0;
-    left: 50%;
-    width: 50%;
-    height: 100vh;
-}
 
 #clicked:target nav {
     transform: translate(0, 0);
@@ -168,6 +169,30 @@ nav {
     display: block;
 }
 
+/* Navigation bar modification */
+nav ul {
+    flex-direction: column;
+}
+
+nav li 
+{
+    padding-bottom: 1em;
+}
+
+
+nav {
+    display: block;
+    transform: translate(150%, 0);
+    transition: 0.5s;
+    background-color: var(--primary);
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100vh;
+}
+
+
 /* Home Main Modification */
 .homeMain div{
     width: 100%;
@@ -182,4 +207,30 @@ nav {
     gap: 1.25em;
     margin-top: 3.2em;
     margin-bottom: 3.2em;
+}
+
+/* Form related modification */
+/* .contactMain{
+    border: 1em;
+    border-radius: 1em;
+    background-color: #020524;
+    width: 50%;
+    height: 34em;
+    margin-top: 3em;
+    margin-left: 30%;
+    padding-left: 3em;
+    padding-top: 3em;
+} */
+
+form{
+    display: grid;
+    grid-template-columns: 100%;
+    width: 100%;
+    background-color: #020524;
+    border-radius: 1em;
+    height: 25em;
+    padding-left: 1em;
+    padding-top: 1em;
+    padding-right: 1em;
+    
 }
