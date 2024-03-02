@@ -45,7 +45,7 @@ body {
     justify-content: center;
 }
 
-aside{
+aside {
     width: 100%;
 }
 
@@ -95,16 +95,18 @@ footer a {
 header {
     padding: 1.5em;
 }
+
 .contactHeader div p {
     font-size: 1em;
 }
-.contactHeader div{
+
+.contactHeader div {
     margin-top: 1em;
     margin-left: 0;
 }
 
 /* Contact page header icon */
-.fa-solid.fa-address-card.fa-3x{
+.fa-solid.fa-address-card.fa-3x {
     font-size: 1.5em;
     margin-left: 30%;
 }
@@ -118,9 +120,7 @@ header {
 } */
 
 /* Form related modification */
-
-
-form{
+form {
     display: grid;
     grid-template-columns: 100%;
     width: 100%;
@@ -134,10 +134,29 @@ form{
     margin-top: 0;
 }
 
+.submitForm {
+    display: flex;
+    grid-column: 1;
+    justify-content: space-around;
+    margin-bottom: 2em;
+}
+
+.submitAndReset {
+    width: 5em;
+    height: 2em;
+}
+
+#comment {
+    width: 20em;
+    margin-left: 1em;
+    margin-right: 1em;
+    height: 5em;
+}
+
 .contactHeader div i {
     float: none;
-    /* padding-right: 0.5em; */
 }
+
 /* Show nav, Hambuger Modification */
 .showNav {
     height: 0.2em;
@@ -174,8 +193,7 @@ nav ul {
     flex-direction: column;
 }
 
-nav li 
-{
+nav li {
     padding-bottom: 1em;
 }
 
@@ -194,7 +212,7 @@ nav {
 
 
 /* Home Main Modification */
-.homeMain div{
+.homeMain div {
     width: 100%;
 }
 
@@ -207,30 +225,4 @@ nav {
     gap: 1.25em;
     margin-top: 3.2em;
     margin-bottom: 3.2em;
-}
-
-/* Form related modification */
-/* .contactMain{
-    border: 1em;
-    border-radius: 1em;
-    background-color: #020524;
-    width: 50%;
-    height: 34em;
-    margin-top: 3em;
-    margin-left: 30%;
-    padding-left: 3em;
-    padding-top: 3em;
-} */
-
-form{
-    display: grid;
-    grid-template-columns: 100%;
-    width: 100%;
-    background-color: #020524;
-    border-radius: 1em;
-    height: 25em;
-    padding-left: 1em;
-    padding-top: 1em;
-    padding-right: 1em;
-    
 }

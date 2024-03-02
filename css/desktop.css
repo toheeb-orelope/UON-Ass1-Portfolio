@@ -34,13 +34,18 @@ body {
 }
 
 /* Form related modification */
-form{
+/* form{
     margin-left: 30%;
     margin-top: 3em;
     text-align: center;
     justify-content: center;
 }
 
+.formLabels{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+}
 
 .submitForm{
     display: flex;
@@ -55,7 +60,7 @@ form{
     height: 2em;
 }
 #comment{
-    width: 150em;
+    width: 80em;
     margin-left: 3em;
     height: 10em;
 }
@@ -66,4 +71,87 @@ form{
     grid-column: 1/1;
     margin-bottom: 2em;
     margin-top: 2em;
+} */
+
+.contactMain form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5em;
+}
+
+.formLabels {
+    grid-column: span 2;
+}
+
+.textAreaForm {
+    grid-column: span 2;
+}
+
+
+.submitForm {
+    grid-column: span 2;
+    text-align: center;
+}
+
+
+/* Submenu Start */
+nav>ul>li {
+    position: relative;
+    width: 100%
+}
+
+/* This will appear with hover by block */
+/* nav ul ul {
+    position: absolute;
+    display: none;
+    background-color: var(--primary);
+    width: 100%;
+    padding: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+nav>ul>li:hover ul {
+    display: block;
+} */
+
+nav ul ul li:hover {
+    background-color: var(--secondary);
+}
+
+/* This is another method using transition opacity */
+/* nav>ul>li:hover ul {
+    opacity: 1;
+    pointer-events: auto;
+    Sub menus can be interacted with
+} */
+
+/* nav ul ul {
+    position: absolute;
+    display: block;
+    background-color: var(--primary);
+    width: 40%;
+    padding: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+    pointer-events: none;
+    Sub menus cannot be interacted with
+} */
+
+/* Question */
+nav ul ul {
+    position: absolute;
+    display: none;
+    background-color: var(--primary);
+    padding: 0;
+    width: 100%;
+    transform: translate(0, -100%);
+    z-index: -1;
+    transition: transform 0.5s ease-in;
+}
+
+nav>ul>li:hover ul {
+    transform: translate(0, 0);
+    z-index: 1;
+    display: block;
 }
