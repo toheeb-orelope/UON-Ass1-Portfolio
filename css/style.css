@@ -402,7 +402,6 @@ footer>ul>li:hover ul {
     font-size: 0.5em;
     font-weight: bold;
     color: var(--text2);
-    /* opacity: 1em; */
     height: 100vh;
 
     animation: move_backgroud 10s infinite;
@@ -497,3 +496,4 @@ footer>ul>li:hover ul {
         opacity: 100%;
     }
 }
+
