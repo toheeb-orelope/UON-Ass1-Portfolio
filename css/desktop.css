@@ -21,7 +21,7 @@ body {
         "aside aside aside"
         "footer footer footer"
     ;
-    background-color: var(--background)
+    background-color: var(--background);
 }
 
 .showNav {
@@ -34,65 +34,56 @@ body {
 }
 
 /* Form related modification */
-/* form{
-    margin-left: 30%;
-    margin-top: 3em;
-    text-align: center;
-    justify-content: center;
-}
-
-.formLabels{
+form {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto;
+    width: 50%;
+    background-color: #020524;
+    height: 30em;
+    padding-left: 1em;
+    padding-top: 1.5em;
+    padding-right: 1em;
+    margin-left: 30%;
+    margin-top: 2em;
 }
+
 
 .submitForm{
     display: flex;
     grid-column: 1/3;
     justify-content: space-around;
-    margin-right: 40%;
     margin-bottom: 2em;
 }
 
-.submitAndReset{
-    width: 5em;
+#comment{
+    width: 15em;
+    /* margin-left: 2em; */
+    height: 5em;
+    margin-right: 2em;
+}
+
+.placeholderForm{
+    margin-left: 0em;
+    margin-right: 2em;
     height: 2em;
 }
-#comment{
-    width: 80em;
-    margin-left: 3em;
-    height: 10em;
-}
-
-.textAreaForm{
-    width: 100%;
-    display: flex;
-    grid-column: 1/1;
-    margin-bottom: 2em;
-    margin-top: 2em;
-} */
 
 .contactMain form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 5em;
+    gap: 2em;
 }
 
-.formLabels {
-    grid-column: span 2;
+.submitAndReset {
+    width: 5em;
+    height: 2em;
 }
-
-.textAreaForm {
-    grid-column: span 2;
+#country{
+    margin-left: 0em;
+    margin-right: 2em;
+    height: 2em;
 }
-
-
-.submitForm {
-    grid-column: span 2;
-    text-align: center;
-}
-
 
 /* Submenu Start */
 nav>ul>li {
@@ -138,14 +129,14 @@ nav ul ul li:hover {
     Sub menus cannot be interacted with
 } */
 
-/* Question */
+
 nav ul ul {
     position: absolute;
-    display: none;
+    display: block;
     background-color: var(--primary);
     padding: 0;
     width: 100%;
-    transform: translate(0, -100%);
+    transform: translate(0, -120%);
     z-index: -1;
     transition: transform 0.5s ease-in;
 }
@@ -155,3 +146,26 @@ nav>ul>li:hover ul {
     z-index: 1;
     display: block;
 }
+
+main{
+    margin-left: 2em;
+}
+
+header{
+    margin-left: 2em;
+}
+
+nav{
+    margin-left: 2em;
+}
+
+.homeMain div{
+    margin-left: 25%;
+    margin-top: 3.1em;
+}
+
+.headerContainer{
+    justify-content: center;
+    margin-left: 35%;
+}
+
