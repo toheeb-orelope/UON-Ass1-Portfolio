@@ -1,10 +1,3 @@
-/*
---text: hsl(220, 21%, 95%);
---background: hsl(214, 20%, 7%);
---primary: hsl(221, 21%, 71%);
---secondary: hsl(303, 22%, 32%);
---accent: hsl(333, 22%, 53%);
-*/
 /* Root color build up */
 :root {
     --text: hsl(220, 21%, 95%);
@@ -56,10 +49,24 @@ nav ul {
 nav a {
     color: var(--text);
     text-decoration: none;
+    top: 30%;
 }
 
 nav a:hover {
     background-color: var(--primary);
+    animation: navHover 2s ease-in-out 0s 1 alternate-reverse forwards;
+}
+
+@keyframes navHover {
+	0% {
+		background-position: center bottom;
+		background-size: 100%;
+	}
+
+	100% {
+		background-position: center bottom;
+		background-size: 150%;
+	}
 }
 
 
@@ -271,6 +278,13 @@ label {
     margin-bottom: 1.5em;
 }
 
+.siteReportClass p:nth-child(3){
+    color: var(--text);
+}
+.siteReportClass button a{
+    text-decoration: none;
+}
+/* Map styling  */
 .waterside {
     display: block;
     width: 25em;
@@ -303,6 +317,8 @@ aside {
     margin: 0 2em;
     justify-content: center;
 }
+
+
 
 /*Example of pseudo-class selector*/
 .fa-brands.fa-facebook {
@@ -428,7 +444,7 @@ footer>ul>li:hover ul {
     font-size: 0.3em;
     font-weight: bold;
     color: var(--text);
-    opacity: 0.3;
+    opacity: 0.08;
 }
 
 .background p:nth-child(even) {
@@ -473,4 +489,29 @@ footer>ul>li:hover ul {
         0 0.225em 0 0 #cacaca,
         0 0.225em 0.375em 0 #cecece;
     cursor: pointer;
+}
+
+.siteReportClass h1 {
+    color: var(--secondary);
+    margin: 0.6em;
+}
+
+.siteReportClass p {
+    color: var(--text2);
+    line-break: auto;
+    text-align: justify;
+    background-color: var(--text);
+    padding: 1em;
+    margin: 0.6em;
+    border-radius: 0.5em;
+}
+
+.siteReportClass p a {
+    color: rgb(25, 7, 224);
+    text-decoration: none;
+}
+
+.codeValidation h4 {
+    color: var(--secondary);
+    margin: 0.6em;
 }
