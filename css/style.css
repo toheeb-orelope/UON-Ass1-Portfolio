@@ -510,11 +510,11 @@ footer>ul>li:hover ul {
 }
 
 .background p:nth-child(even) {
-    animation: animateUp 5s infinite linear;
+    animation: animateUp 2s infinite linear;
 }
 
 .background p:nth-child(odd) {
-    animation: animateDown 5s infinite linear;
+    animation: animateDown 2s infinite linear;
 }
 
 
